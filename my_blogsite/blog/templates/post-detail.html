@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+(% block title %)
+This Post Title
+
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'post-detail.css'%}" />\
+{% endblock %}
+
+{% block content %}
+  <section id="summery">
+    <h2>Post Title</h2>
+    <article>
+      <img src="{% static 'images/hiking.jpg'%}" alt="Post Title">
+      <address>By Chaitany</address>
+      <div>
+        last updated on <time> 10th Oct </time>
+      </div>
+    </article>
+  </section>
+
+  <main>
+    <p>
+      Mountain climbing has been on the bucket list of many people. It is an activity which is considered
+      to be very exciting and adventurous. Moreover, it is something you will find to be very common all across the world.
+    </p>
+    <p>
+       Indeed mountain climbing has come a long way. The people of the yesteryears had a tough time accomplishing it;
+       however, it is not the case now. It is still challenging but not as challenging as it used to be.
+       The modern-day equipment and technology have made it easier.
+    </p>
+    <p>
+       Furthermore, a person who decides to do mountain climbing has already accomplished and overcome his fear.
+       It is an activity that teaches a lot about facing challenges and overcoming our fears. Moreover, it also
+       makes us fitter both mentally and physically. It can be easily that those who have tried it have said
+       to come out as better people through this experience.
+    </p>
+    <p>
+        Above all, people also take up mountain climbing to set new records or break the older ones. But, it is safe to
+        say that most of them do it for the thrill of the experience and doing something adventurous. It does pose
+        a lot of challenges for the person but that does not stop people from pursuing it nonetheless. This is so because
+        the excitement and kick one gets here won’t find anywhere else.
+    </p>
+
+  </main>
+
+{% endblock %}
